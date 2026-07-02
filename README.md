@@ -1,68 +1,43 @@
-# 🛡️ WeLe Guard v3.0 — AI Chat Community Moderator
-### GlitchCon 2.0 · GBA_1 · Semantic AI + Agentic Moderation
+# 🤖 AI Chat Moderator
+
+<p align="center">
+  <img src="https://img.shields.io/badge/GenAI-LLM--Powered-blueviolet?style=for-the-badge&logo=openai" alt="LLM-Powered">
+  <img src="https://img.shields.io/badge/UI-Modern%20%26%20Clean-FF6B6B?style=for-the-badge" alt="Great UI">
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" alt="Status">
+</p>
+
+<p align="center">
+  <strong>A Next-Generation Intelligent Chat Moderation System</strong><br>
+  Say goodbye to rigid, easily bypassed regex rules and static keyword lists. Welcome to context-aware, LLM-driven safety.
+</p>
 
 ---
 
-## 🚀 SETUP (5 steps)
+## 🚀 Key Innovations
 
-### 1. Install Node.js
-https://nodejs.org → LTS → Install → verify: `node -v`
-
-### 2. Open in VS Code
-File → Open Folder → wele-guard → Terminal (Ctrl+`)
-
-### 3. Install dependencies
-```
-npm install
-```
-
-### 4. Get FREE Groq API Key
-1. https://console.groq.com → Sign up free
-2. API Keys → Create API Key
-3. Copy key (starts with `gsk_`)
-
-### 5. Run & open
-```
-npm run dev
-```
-Open http://localhost:5173
+*   **Context-Aware Analysis:** Understands sarcasm, intent, and nuance—not just isolated bad words.
+*   **Zero Static Rules:** Completely dynamic moderation that adapts without needing manual blacklist updates.
+*   **Sleek & Intuitive UI:** Features a custom, beautiful frontend built for smooth user interactions.
+*   **Proactive Moderation:** Swiftly evaluates incoming text to flag, filter, or block toxic content before it escalates.
 
 ---
 
-## 👥 DEMO ACCOUNTS
+## 🛠️ Built With
 
-| Role | Email | Password |
-|------|-------|----------|
-| 👑 Admin | admin@wele.com | admin123 |
-| 👤 Learner | alex@wele.com | user123 |
-| 🎓 Mentor | priya@wele.com | user123 |
-| 👤 Learner | sam@wele.com | user123 |
+| Layer | Technology Stack |
+| :--- | :--- |
+| **Brain** | LLM Engine (GenAI API / LangChain) |
+| **Backend** | Python |
+| **Frontend** | Custom Interactive UI |
 
 ---
 
-## 🆕 v3.0 FEATURES
+## 📦 Getting Started
 
-### Separate Role-Based Login
-- Admin → full dashboard (users, groups, global rules)
-- Learner/Mentor → chat with onboarding (skillset + group selection)
-
-### Agentic Context Resolution
-- User enters their skillset on first login
-- Before each message, an AI agent calls `/api/agent/resolve-context`
-- Agent gets: user skillset + group semantic context + message
-- Returns: relevance score, reasoning, suggested group if off-topic
-- This context is fed INTO the main moderation prompt
-
-### Semantic AI Moderation (not keyword-based)
-- Python ML question in Data Science group → SAFE ✅
-- Python for Java REST API integration → SAFE ✅  
-- "Can I use Python?" in Java group → BORDERLINE (agent decides based on context)
-- Netflix discussion anywhere → BLOCKED ✅
-- No keyword blacklists — pure LLM semantic understanding
-
-### Admin Controls
-- Ban/unban users directly
-- Edit group semantic context (what the AI understands about each group)
-- Add/remove allowed and disallowed topic hints
-- View all users + violation counts
+### 1. Installation
+Clone the repository and jump right into the project directory:
+```bash
+git clone [https://github.com/Rakshanadevi-S/Chat_Moderator.git](https://github.com/Rakshanadevi-S/Chat_Moderator.git)
+cd Chat_Moderator
 
