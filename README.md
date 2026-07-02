@@ -1,4 +1,4 @@
-# 🤖 AI Chat Moderator
+# 🛡️ AI Chat Moderator
 
 <p align="center">
   <img src="https://img.shields.io/badge/GenAI-LLM--Powered-blueviolet?style=for-the-badge&logo=openai" alt="LLM-Powered">
@@ -8,36 +8,24 @@
 </p>
 
 <p align="center">
-  <strong>A Next-Generation Intelligent Chat Moderation System</strong><br>
-  Say goodbye to rigid, easily bypassed regex rules and static keyword lists. Welcome to context-aware, LLM-driven safety.
+  <strong>An intelligent, context-aware chat moderation system designed to replace outdated rule-based filtering.</strong>
 </p>
 
 ---
 
-## 🚀 Key Innovations
+## 📖 Overview
+Traditional chat moderation relies on static lists of "banned words," which are easily bypassed and struggle with nuance. This project leverages the power of **Large Language Models (LLMs)** to analyze chat messages in real-time, detecting toxicity, harassment, and inappropriate content based on intent, sentiment, and context.
 
-*   **Context-Aware Analysis:** Understands sarcasm, intent, and nuance—not just isolated bad words.
-*   **Zero Static Rules:** Completely dynamic moderation that adapts without needing manual blacklist updates.
-*   **Sleek & Intuitive UI:** Features a custom, beautiful frontend built for smooth user interactions.
-*   **Proactive Moderation:** Swiftly evaluates incoming text to flag, filter, or block toxic content before it escalates.
+## ✨ Key Innovations
+*   **Semantic Understanding:** Moves beyond keyword matching to interpret the actual *meaning* and *tone* of user messages.
+*   **Dynamic Moderation:** Automatically adapts to new forms of toxic behavior without requiring manual keyword updates.
+*   **Intuitive UI:** Built with a custom, user-friendly interface designed for seamless interaction and management.
+*   **Proactive Filtering:** Acts as an intelligent layer that evaluates content before it reaches your community.
 
----
-
-## 🛠️ Built With
-
-| Layer | Technology Stack |
+## 🛠️ Technical Architecture
+| Component | Implementation |
 | :--- | :--- |
-| **Brain** | LLM Engine (GenAI API / LangChain) |
-| **Backend** | Python |
-| **Frontend** | Custom Interactive UI |
-
----
-
-## 📦 Getting Started
-
-### 1. Installation
-Clone the repository and jump right into the project directory:
-```bash
-git clone [https://github.com/Rakshanadevi-S/Chat_Moderator.git](https://github.com/Rakshanadevi-S/Chat_Moderator.git)
-cd Chat_Moderator
+| **Moderation Engine** | LLM API Integration |
+| **Logic Layer** | Python |
+| **Frontend** | Custom Responsive UI |
 
